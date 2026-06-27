@@ -64,14 +64,6 @@ nav a:hover {
   font-size: 2rem;
 }
 
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: black;
-  color: white;
-}
-
 
 .project-card {
   display: flex;
@@ -85,12 +77,9 @@ footer {
   border: 1px solid #e5e5e5;
 }
 
-/* .project-link {
-  display: flex;
-  gap: 0.5rem;
-  margin-top: 1rem;
-  flex-wrap: wrap;
-} */
+#projects {
+  background: white;
+}
 
 .project-card img {
   width: 100%;
@@ -103,6 +92,61 @@ footer {
   color: black;
 }
 
-#projects {
-  background: white;
+
+    /* CONTACT SECTION */
+#contact {
+  background: #f8f9fa;
+  padding: 3rem 2rem;
+}
+
+.contact-form {
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  max-width: 480px;
+  margin: auto;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+.contact-form h2 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-form button:hover {
+  background: #0056b3;
+}
+
+/* FOOTER */
+.site-footer {
+  text-align: center;
+  padding: 1.2rem;
+  background: #111;
+  color: white;
 }
