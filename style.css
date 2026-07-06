@@ -10,27 +10,37 @@ body {
 }
 
 
-nav {
+.site-nav {
   display: flex;
   justify-content: space-between;
-  align-items:right;
-  padding: 1rem;
+  align-items: center;
+  padding: 1rem 2rem;
   background: rgb(6, 6, 6);
   color: white;
 }
 
-nav ul {
-  display: flex;
-  list-style: none;
-  gap: 2rem;
-}
-
-nav a {
+.site-nav .logo {
   color: white;
   text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
 }
 
-nav a:hover {
+.site-nav .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.site-nav .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.site-nav .nav-links a:hover {
   color: #00adb5;
 }
 
@@ -179,8 +189,20 @@ nav a:hover {
 
 .nav-footer {
   display: flex;
-  justify-content:left;
+  justify-content: left;
+  align-items: center;
   gap: 1rem;
-  margin-top: 0.5rem;
+  flex-wrap: wrap;
+  margin: 0.75rem 0;
   background: #111;
+}
+
+.nav-footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-footer a:hover {
+  color: #00adb5;
 }
