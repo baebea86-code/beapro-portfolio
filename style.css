@@ -49,7 +49,8 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 3rem 2rem;
-  background: url('./assets/heropic.jpg') no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+               url('./assets/heropic.jpg') no-repeat center center;
   background-size: cover;
   color: white;
 }
