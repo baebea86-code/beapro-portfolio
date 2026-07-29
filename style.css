@@ -119,7 +119,7 @@ body {
 #about .about-image,
 #about .container {
   flex: 1 1 300px;
-  max-width: 500px;
+  max-width: 900px;
 }
 
 #about .container {
@@ -195,10 +195,9 @@ body {
 
 .nav-footer {
   display: flex;
-  justify-content: left;
+  flex-direction: column;
   align-items: center;
-  gap: 1rem;
-  flex-wrap: wrap;
+  gap: 0.5rem;
   margin: 0.75rem 0;
   background: #111;
 }
