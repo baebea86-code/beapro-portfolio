@@ -184,21 +184,40 @@ body {
 .contact-form button:hover {
   background: #0056b3;
 }
-
 /* FOOTER */
 .site-footer {
   text-align: center;
-  padding: 1.2rem;
+  padding: 1.5rem 2rem 0.8rem;
   background: #111;
   color: white;
 }
 
+/* Logo + Name */
+
+.footer-brand img {
+  height: 42px;
+  width: auto;
+  margin-bottom: 0.8rem;
+}
+
+.footer-brand h3 {
+  margin-bottom: 0.2rem;
+  font-size: 1.3rem;
+}
+
+.footer-brand p {
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+/* Navigation */
+
 .nav-footer {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 0.5rem;
-  margin: 0.75rem 0;
+  gap: 1.5rem;
+  margin: 1rem 0;
   background: #111;
 }
 
@@ -206,8 +225,69 @@ body {
   color: white;
   text-decoration: none;
   font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .nav-footer a:hover {
   color: #00adb5;
+}
+
+/* Social Icons */
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+
+  border: 1px solid #555;
+  border-radius: 50%;
+
+  color: white;
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+.footer-socials a:hover {
+  color: #00adb5;
+  border-color: #00adb5;
+  transform: translateY(-3px);
+}
+
+/* Copyright */
+
+.footer-bottom {
+  padding-top: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.footer-bottom p {
+  color: #777;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+
+/* FOOTER MOBILE */
+@media (max-width: 600px) {
+
+  .nav-footer {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .site-footer {
+    padding: 1.5rem 1rem 0.8rem;
+  }
+
 }
