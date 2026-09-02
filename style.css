@@ -501,3 +501,47 @@ body {
   }
 
 }
+
+/* skills section */
+.skill-card {
+  background: #333;
+  color: white;
+  border-radius: 10px;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+}
+
+.skill-card i {
+  font-size: 2.5rem;
+  color: #00adb5;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.skill-card p {
+  margin: 0;
+  font-weight: 500;
+}
+
+/* see more button */
+.see-more-btn {
+  display: inline-block;
+  background: transparent;
+  border: 1px solid #00adb5;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.see-more-btn:hover {
+  background: #00adb5;
+  color: white;
+}
