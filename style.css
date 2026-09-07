@@ -503,9 +503,14 @@ body {
 }
 
 /* skills section */
-.skill-card {
+
+#skills {
   background: #333;
-  color: white;
+}
+
+.skill-card {
+  background: white;
+  color: #333;
   border-radius: 10px;
   padding: 1.5rem 1rem;
   text-align: center;
