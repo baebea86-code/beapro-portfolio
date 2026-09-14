@@ -13,7 +13,7 @@ function applyTheme(theme) {
 
   if (toggle && icon) {
     toggle.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
-    icon.textContent = theme === 'dark' ? '☀️' : '🌙';
+    icon.className = theme === 'dark' ? 'bi bi-sun-fill' : 'bi bi-moon-fill';
   }
 }
 
