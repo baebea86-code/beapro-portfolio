@@ -486,7 +486,7 @@ body[data-theme='light'] {
   color: var(--footer-text);
 }
 
-.site-footer,
+/* .site-footer,
 .site-footer a,
 .site-footer .nav-footer a,
 .site-footer .footer-socials a,
@@ -494,6 +494,15 @@ body[data-theme='light'] {
 .site-footer .footer-brand p,
 .site-footer .footer-bottom p {
   color: var(--footer-text);
+} */
+
+.site-footer .nav-footer a,
+.site-footer .nav-footer a:visited,
+.site-footer .nav-footer a:hover,
+.site-footer .nav-footer a:focus,
+.site-footer .nav-footer a:active {
+  /* color: var(--footer-text) !important; */
+  text-decoration: none;
 }
 
 /* Logo + Name */
@@ -522,18 +531,18 @@ body[data-theme='light'] {
   align-items: center;
   gap: 1.5rem;
   margin: 1rem 0;
-  background: var(--footer-bg);
+  background: var(--footer-strong-bg);
 }
 
-.nav-footer a {
-  color: var(--footer-text);
+.site-footer .nav-footer a,
+.site-footer .nav-footer a:visited,
+.site-footer .nav-footer a:hover,
+.site-footer .nav-footer a:focus,
+.site-footer .nav-footer a:active {
+  color: var(--footer-text) !important;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
-}
-
-.nav-footer a:hover {
-  color: var(--nav-link-hover);
 }
 
 /* Social Icons */
