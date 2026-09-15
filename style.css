@@ -611,29 +611,115 @@ body[data-theme='light'] {
   background: var(--section-bg);
 }
 
-.skill-card {
+#skills .skills-carousel {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+#skills .skills-viewport {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+#skills .skills-track {
+  display: flex;
+  transition: transform 0.45s ease;
+}
+
+#skills .skill-card {
+  flex: 0 0 33.3333%;
   background: #303030;
   color: #fff;
   border-radius: 10px;
-  padding: 1.5rem 1rem;
+  min-height: 190px;
+  margin: 0 0.4rem;
+  padding: 2.5rem 1rem;
   text-align: center;
-  transition: transform 0.2s ease;
 }
 
-.skill-card:hover {
+#skills .skill-card:hover {
   transform: translateY(-4px);
 }
 
-.skill-card i {
+#skills .skill-card i {
   font-size: 2.5rem;
   color: #00adb5;
   margin-bottom: 0.5rem;
   display: block;
 }
 
-.skill-card p {
+#skills .skill-card p {
   margin: 0;
   font-weight: 500;
+}
+
+.skills-carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.carousel-button,
+.carousel-dot {
+  border: 0;
+  cursor: pointer;
+}
+
+.carousel-button {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--card-bg);
+  color: var(--text);
+  border: 1px solid var(--card-border);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.carousel-button:hover,
+.carousel-button:focus-visible {
+  background: #00adb5;
+  color: #fff;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.carousel-dot {
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  border-radius: 50%;
+  background: var(--card-border);
+}
+
+.carousel-dot.is-active,
+.carousel-dot:hover,
+.carousel-dot:focus-visible {
+  background: #00adb5;
+}
+
+.carousel-button:focus-visible,
+.carousel-dot:focus-visible {
+  outline: 3px solid rgba(0, 173, 181, 0.35);
+  outline-offset: 3px;
+}
+
+@media (max-width: 700px) {
+  #skills .skill-card {
+    flex-basis: 100%;
+    margin: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #skills .skills-track {
+    transition: none;
+  }
 }
 
 /* see more button */

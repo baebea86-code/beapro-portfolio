@@ -50,59 +50,55 @@
 <!-- skills section -->
 <section id="skills" class="section">
   <h2>Skills</h2>
-  <div class="container">
-    <div class="row row-cols-2 row-cols-md-4 g-4 justify-content-center skills-row">
-
-      <div class="col">
-        <div class="skill-card">
-          <i class="bi bi-filetype-html"></i>
+  <div class="skills-carousel" aria-label="Skills carousel">
+    <div class="skills-viewport">
+      <div class="skills-track">
+        <div class="skill-card" role="group" aria-label="Skill 1 of 7">
+          <i class="bi bi-filetype-html" aria-hidden="true"></i>
           <p>HTML5</p>
         </div>
-      </div>
-
-      <div class="col">
-        <div class="skill-card">
-          <i class="bi bi-filetype-css"></i>
+        <div class="skill-card" role="group" aria-label="Skill 2 of 7">
+          <i class="bi bi-filetype-css" aria-hidden="true"></i>
           <p>CSS3</p>
         </div>
-      </div>
-
-      <div class="col">
-        <div class="skill-card">
-          <i class="bi bi-filetype-js"></i>
+        <div class="skill-card" role="group" aria-label="Skill 3 of 7">
+          <i class="bi bi-filetype-js" aria-hidden="true"></i>
           <p>JavaScript</p>
         </div>
-      </div>
-
-      <div class="col">
-        <div class="skill-card">
-          <i class="bi bi-bootstrap"></i>
+        <div class="skill-card" role="group" aria-label="Skill 4 of 7">
+          <i class="bi bi-bootstrap" aria-hidden="true"></i>
           <p>Bootstrap</p>
         </div>
-      </div>
-
-      <div class="col">
-        <div class="skill-card">
-          <i class="bi bi-github"></i>
-          <p>Git & GitHub</p>
+        <div class="skill-card" role="group" aria-label="Skill 5 of 7">
+          <i class="bi bi-github" aria-hidden="true"></i>
+          <p>Git &amp; GitHub</p>
         </div>
-      </div>
-
-      <div class="col">
-        <div class="skill-card">
-          <i class="bi bi-phone"></i>
+        <div class="skill-card" role="group" aria-label="Skill 6 of 7">
+          <i class="bi bi-phone" aria-hidden="true"></i>
           <p>Responsive Design</p>
         </div>
-      </div>
-
-      
-      <div class="col">
-        <div class="skill-card">
-          <i class="bi bi-phone"></i>
+        <div class="skill-card" role="group" aria-label="Skill 7 of 7">
+          <i class="bi bi-phone" aria-hidden="true"></i>
           <p>React</p>
         </div>
       </div>
-
+    </div>
+    <div class="skills-carousel-controls">
+      <button class="carousel-button" type="button" data-carousel-prev aria-label="Show previous skill">
+        <i class="bi bi-arrow-left" aria-hidden="true"></i>
+      </button>
+      <div class="carousel-dots" role="tablist" aria-label="Choose a skill">
+        <button class="carousel-dot is-active" type="button" role="tab" aria-selected="true" aria-label="Show HTML5" data-carousel-dot="0"></button>
+        <button class="carousel-dot" type="button" role="tab" aria-selected="false" aria-label="Show CSS3" data-carousel-dot="1"></button>
+        <button class="carousel-dot" type="button" role="tab" aria-selected="false" aria-label="Show JavaScript" data-carousel-dot="2"></button>
+        <button class="carousel-dot" type="button" role="tab" aria-selected="false" aria-label="Show Bootstrap" data-carousel-dot="3"></button>
+        <button class="carousel-dot" type="button" role="tab" aria-selected="false" aria-label="Show Git and GitHub" data-carousel-dot="4"></button>
+        <button class="carousel-dot" type="button" role="tab" aria-selected="false" aria-label="Show Responsive Design" data-carousel-dot="5"></button>
+        <button class="carousel-dot" type="button" role="tab" aria-selected="false" aria-label="Show React" data-carousel-dot="6"></button>
+      </div>
+      <button class="carousel-button" type="button" data-carousel-next aria-label="Show next skill">
+        <i class="bi bi-arrow-right" aria-hidden="true"></i>
+      </button>
     </div>
   </div>
 </section>
